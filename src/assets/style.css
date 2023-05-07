@@ -8,15 +8,31 @@
     /* font-family: sans; color: red; */
 }
 
+@media screen and (max-width: 800px) {
+    #navbar-text {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #navbar-text {
+      font-size: 3vw;
+    }
+}
+
 .ms-2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+}
+
+.ms-2-img {
+    height: 6rem;
 }
 
 .text-responsive {
     font-size: calc(45% + 0.4vw);
   }
 
-/* If the screen size is 1200px wide or less, set the font-size of <div> to 30px */
+/* If the screen size is 1200px wide or less ... */
 @media screen and (max-width: 1200px) {
     #navbar {
         -webkit-text-stroke: 0.075rem aqua; /* width and color */
@@ -24,7 +40,33 @@
 
     .ms-2 {
   
+        font-size: 2rem;
+    }
+
+    .ms-2-img {
+        height: 6rem;
+    }
+
+    .text-responsive {
+        font-size: calc(60% + 0.6vw);
+    }
+  }
+
+
+/* If the screen size is 800px wide or less ... */
+@media screen and (max-width: 800px) {
+    #navbar {
+        -webkit-text-stroke: 0.075rem aqua; /* width and color */
+    }
+
+    .ms-2 {
+  
         font-size: 1.5rem;
+    }
+
+
+    .ms-2-img {
+        height: 3rem;
     }
 
     .text-responsive {
@@ -50,7 +92,7 @@ body {
   }
 
 .well {
-    background-color: rgba(245, 245, 245, 0.4);
+    background-image: linear-gradient(#ccccff, #ccffff);
     transition: transform .2s ease-in-out;
     border: 0.15rem solid aqua;
     
@@ -62,3 +104,42 @@ body {
     transform: rotate(-1deg);
     box-shadow: 0 0 20px aqua; 
 }
+
+.well-live {
+    background-image: linear-gradient(#ccccff, #ccffff);
+    transition: transform .2s ease-in-out;
+    border: 0.15rem solid red;  
+
+ }
+ 
+ .well-live:hover {
+    transform:scale(1.055);
+    transform: rotate(-1deg);
+    box-shadow: 0 0 20px red; 
+}
+
+.well-upcoming {
+    background-image: linear-gradient(#ccccff, #ccffff);
+    transition: transform .2s ease-in-out;
+    border: 0.15rem solid gold;
+ }
+ 
+ .well-upcoming:hover {
+    transform:scale(1.055);
+    transform: rotate(-1deg);
+    box-shadow: 0 0 20px gold; 
+}
+
+
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+  }
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;    
+}
+
+.blah {
+    font-size: 0.4rem;
+}  
